@@ -33,10 +33,16 @@ module.exports = {
 ```
 
 Set up an HTML skeleton inside of dist/index.html with single <div id="content">.
+
 Inside of src/index.js write a console.log or alert statement and then run npx webpack. Load up dist/index.html in a browser to make sure everything is working correctly.
+
 Quick tip #2: if you run npx webpack --watch you will not have to rerun webpack every time you make a change.
+
 Create a bare-bones homepage for a restaurant. Include an image, headline, and some copy about how wonderful the restaurant is.
-Now remove those elements from the HTML (so leave only the <html>, <body>, and <div id="content"> tags) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded. Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
+
+Now remove those elements from the HTML (so leave only the <html>, <body>, and <div id="content"> tags) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded.
+
+Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
 
 Next, set up your restaurant site to use tabbed browsing to access the Contact and Menu pages. 
 Put the contents of each ‘tab’ inside of its own module. Each module will export a function that creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.

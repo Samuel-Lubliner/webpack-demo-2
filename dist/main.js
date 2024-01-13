@@ -1,1 +1,1 @@
-console.log("Hello");
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{!function(){const e=document.getElementById("content"),t=document.createElement("h1");t.textContent="Welcome this is the sample h1",e.appendChild(t);const n=new Image;n.src="southern_viscacha.jpg",e.appendChild(n);const c=document.createElement("p");c.textContent="Here is some sample content",e.appendChild(c)}()}))})();

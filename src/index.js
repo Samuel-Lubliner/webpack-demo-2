@@ -1,1 +1,5 @@
-console.log('Hello');
+import createHomepage from './homepage';
+
+document.addEventListener('DOMContentLoaded', () => {
+    createHomepage();
+});
