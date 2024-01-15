@@ -5,9 +5,9 @@ Note: DOM elements should be created using JavaScript but styling can be done in
 
 Start the project the same way you began the webpack tutorial project.
 
-run npm init in your project directory to generate a package.json file.
+`npm init` in your project directory to generate a package.json file.
 
-run npm install webpack webpack-cli --save-dev to install webpack to the node_modules directory of your project.
+`npm install webpack webpack-cli --save-dev` to install webpack to the node_modules directory of your project.
 
 Quick tip: the node_modules folder can get really big. It is customary to add a .gitignore file to your project so that you don’t have to sync the contents of node_modules to github. The dependencies that are stored there can be installed from your package.json by running npm install, so you don’t need to sync them.
 
@@ -44,6 +44,10 @@ Now remove those elements from the HTML (so leave only the <html>, <body>, and <
 
 Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
 
-Next, set up your restaurant site to use tabbed browsing to access the Contact and Menu pages. 
-Put the contents of each ‘tab’ inside of its own module. Each module will export a function that creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.
+Next, set up your restaurant site to use tabbed browsing to access the Contact and Menu pages.
+
+Put the contents of each ‘tab’ inside of its own module.
+
+Each module will export a function that creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.
+
 Write the tab-switching logic inside of index.js. You should have event listeners for each tab that wipes out the current contents and then runs the correct ‘tab module’ to populate it again.
